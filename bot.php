@@ -12,7 +12,7 @@
 
     //Start message
     if($message == "/start"){
-        send_message($chat_id, "Hey $firstname  \nUse /bin xxxxxx To check Bins  \nBot by @sohamnavale1 ");
+        send_message($chat_id, "HEY $firstname  \nUSE /BIN xxxxxx TO CHECK BINS  \nBOT BY @sohamnavale1 ");
     }
 
 
@@ -53,17 +53,17 @@ $Brand = $data['brand'];
 $type = $data['type'];
   if ($scheme != null) {
         send_MDmessage($chat_id, "***
-    Bin: $bin
-Type: $scheme
-Brand : $Brand
-Bank: $bank
-Country: $country $emoji
-Currency: $currency
-Credit/Debit:$type
-Checked By @$username ***");
+    BIN: $bin
+TYPE: $scheme
+BRAND : $Brand
+BANK: $bank
+COUNTRY: $country $emoji
+CURRENCY: $currency
+CREDIT/DEBIT: $type
+CHECKED BY @$username ***");
     }
 else {
-    send_MDmessage($chat_id, "Enter Valid BIN");
+    send_MDmessage($chat_id, "ENTER VALID BIN");
 }
    }
     
