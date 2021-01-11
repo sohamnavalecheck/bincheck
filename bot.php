@@ -44,13 +44,13 @@
 $result = curl_exec($curl);
 curl_close($curl);
 $data = json_decode($result, true);
-$bank = $data['bank']['name'];
-$country = $data['country']['alpha2'];
-$currency = $data['country']['currency'];
-$emoji = $data['country']['emoji'];
-$scheme = $data['scheme'];
-$Brand = $data['brand'];
-$type = $data['type'];
+$bank = strtoupper($data['bank']['name']);
+$country = strtoupper($data['country']['alpha2']);
+$currency = strtoupper($data['country']['currency']);
+$emoji = strtoupper($data['country']['emoji']);
+$scheme = strtoupper($data['scheme']);
+$Brand = strtoupper($data['brand']);
+$type = strtoupper($data['type']);
   if ($scheme != null) {
         send_MDmessage($chat_id, "***
     BIN: $bin
