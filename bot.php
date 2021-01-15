@@ -48,13 +48,13 @@ $bank = strtoupper($data['bank']['name']);
 $country = strtoupper($data['country']['alpha2']);
 $currency = strtoupper($data['country']['currency']);
 $emoji = strtoupper($data['country']['emoji']);
-$scheme = strtoupper($data['scheme']);
+$scheme1 = strtoupper($data['scheme']);
 $Brand = strtoupper($data['brand']);
 $type = strtoupper($data['type']);
   if ($scheme != null) {
         send_MDmessage($chat_id, "***
     BIN: $bin
-TYPE: $scheme
+TYPE: $scheme1
 BRAND : $Brand
 BANK: $bank
 COUNTRY: $country $emoji
